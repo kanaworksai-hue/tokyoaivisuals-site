@@ -73,7 +73,7 @@ header{position:fixed;top:18px;left:0;right:0;z-index:50;pointer-events:none}
 @keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
 /* ---------- page hero (sub pages) ---------- */
-.page-hero{position:relative;padding:175px 0 85px;background:linear-gradient(180deg,#07071cb3 0%,#0c0c2acc 70%,var(--bg2) 100%),url("page-hero-bg.png") center/cover no-repeat,var(--bg2);border-bottom:1px solid var(--line);overflow:hidden}
+.page-hero{position:relative;padding:175px 0 85px;background:linear-gradient(180deg,#07071cb3 0%,#0c0c2acc 70%,var(--bg2) 100%),url("page-hero-bg.jpg") center/cover no-repeat,var(--bg2);border-bottom:1px solid var(--line);overflow:hidden}
 .page-hero .num{font-family:var(--sans);font-size:12px;letter-spacing:.34em;color:var(--yellow);text-transform:uppercase}
 .page-hero h1{font-family:var(--display);font-size:clamp(40px,7vw,76px);letter-spacing:.03em;text-transform:uppercase;line-height:1.12;margin-top:12px}
 .page-hero h1 .jp{font-family:var(--jpf);font-weight:700;letter-spacing:.06em}
