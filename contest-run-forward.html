@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="jp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RUN FORWARD : AI VIDEO CONTEST 2026 | Tokyo AI Visuals</title>
+<meta name="description" content="Tokyo AI Visuals主催・OiiOii AI協賛。テーマ「走れ」。午年の幕開けを盛り上げたオンラインAI映像コンテスト。">
+<meta property="og:image" content="https://www.tokyoaivisuals.com/assets/page-hero-bg.png">
+<link rel="icon" href="assets/logo500.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Anton&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="fx"></canvas>
+<div id="cursor"></div><div id="ring"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/logo500.png" alt="KanaWorks_AI logo">KanaWorks_AI</a>
+    <nav class="pill" id="navPill">
+      <a href="index.html"><span class="jp">ホーム</span><span class="en">Home</span></a>
+      <a href="services.html"><span class="jp">業務内容</span><span class="en">Services</span></a>
+      <a href="news.html" class="active"><span class="jp">ニュース</span><span class="en">News</span></a>
+      <a href="indie.html">Indie Dev</a>
+      <a href="about.html"><span class="jp">会社情報</span><span class="en">About Us</span></a>
+    </nav>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="menu-btn" onclick="document.getElementById('navPill').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="num">CONTEST — HOSTED BY TOKYO AI VISUALS</div>
+    <h1>RUN FORWARD<br><span style="font-size:.55em">AI VIDEO CONTEST 2026</span></h1>
+    <p class="lead jp">テーマは「走れ」。個性あふれるクリエイティブな映像作品を通して、午年の幕開けをともに盛り上げたオンラインコンテストです。優秀作品は特設ページおよび公式SNSで紹介。</p>
+    <p class="lead en">Theme: "Run." An online contest that kicked off the Year of the Horse through bold, creative AI films — winners featured on the special page and official SNS.</p>
+  </div>
+  <div class="crumb">News / Contests / RUN FORWARD</div>
+</section>
+
+<div class="stats four">
+  <div class="wrap">
+    <div class="stat"><div class="num"><span class="jp" style="font-size:.62em">「走れ」</span><span class="en" style="font-size:.62em">"RUN"</span></div><div class="label jp">テーマ</div><div class="label en">Theme</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="14">0</span><span class="plus jp">日間</span><span class="plus en">days</span></div><div class="label jp">募集期間（2025.12.31〜2026.1.13）</div><div class="label en">Entry window (Dec 31 – Jan 13)</div></div>
+    <div class="stat"><div class="num"><span style="font-size:.62em">1,000<span class="plus">cr</span></span></div><div class="label jp">参加者特典：OiiOii無料クレジット</div><div class="label en">Entry bonus: free OiiOii credits</div></div>
+    <div class="stat"><div class="num"><span class="jp" style="font-size:.55em;line-height:1.4;display:inline-block">OiiOii AI</span><span class="en" style="font-size:.55em;line-height:1.4;display:inline-block">OiiOii AI</span></div><div class="label jp">協賛</div><div class="label en">Sponsor</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">ABOUT</div>
+      <h2><span class="jp">コンテストについて</span><span class="en">About the Contest</span></h2>
+    </div>
+    <div class="quote-block reveal" style="padding-top:0">
+      <p class="q jp">新しい年の始まりに、「走れ」のひと言だけを渡して、世界中のクリエイターがどこまで走れるかを見たい——そんな思いから生まれたコンテストです。<em>応募はXで完結</em>、招待コードで誰でも無料で制作に参加できる設計にしました。</p>
+      <p class="q en">Hand creators a single word — "Run" — at the start of a new year, and see how far they go. <em>Entries complete entirely on X</em>, with invite codes letting anyone create for free.</p>
+    </div>
+    <div class="flow reveal" style="margin-top:50px">
+      <div class="fl-step">
+        <h4><span class="jp">フォロー＆コメント</span><span class="en">Follow &amp; Comment</span></h4>
+        <p class="jp">@KanaWorks_AI をフォローし、テーマ投稿にコメント。OiiOii招待コード（1,000クレジット付き）がDMで届きます。</p>
+        <p class="en">Follow @KanaWorks_AI and comment on the theme post — an OiiOii invite code (1,000 credits) arrives by DM.</p>
+      </div>
+      <div class="fl-step">
+        <h4><span class="jp">制作</span><span class="en">Create</span></h4>
+        <p class="jp">OiiOii AIで「走れ」をテーマに、720p・15秒以上のオリジナル映像を制作。</p>
+        <p class="en">Make an original film on the theme "Run" with OiiOii AI — 720p, 15 sec or longer.</p>
+      </div>
+      <div class="fl-step">
+        <h4><span class="jp">投稿</span><span class="en">Post</span></h4>
+        <p class="jp">ハッシュタグ #RUNFORWARD2026 #kanaworksAI #OiiOii を付けてXに投稿し、テーマ投稿に作品リンクを報告。</p>
+        <p class="en">Post on X with #RUNFORWARD2026 #kanaworksAI #OiiOii, then drop your link under the theme post.</p>
+      </div>
+      <div class="fl-step">
+        <h4><span class="jp">結果発表</span><span class="en">Results</span></h4>
+        <p class="jp">受賞作品を @KanaWorks_AI で掲載。受賞者にはDMで通知、賞金・特典は1月21日までに配布。</p>
+        <p class="en">Winners featured on @KanaWorks_AI, notified by DM; prizes delivered by Jan 21.</p>
+      </div>
+    </div>
+    <p class="works-note reveal" style="margin-top:40px"><span class="jp">著作権はすべて応募者に帰属します。募集要項の全文は</span><span class="en">All rights remain with entrants. Full guidelines: </span> <a href="https://www.tokyoaivisuals.com/contest/RUN-FORWARD" target="_blank" rel="noopener"><span class="jp">公式ページ</span><span class="en">official page</span> ↗</a><span class="jp"> をご覧ください。</span></p>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <video class="bgv" autoplay muted loop playsinline src="assets/cta-bg.mp4"></video>
+  <div class="bgshade"></div>
+  <div class="wrap reveal">
+    <h2><span class="jp">次回コンテストの協賛・コラボ、歓迎します</span><span class="en">Sponsor the Next One</span></h2>
+    <p class="jp">最新の開催情報はXで発信しています。</p>
+    <p class="en">Contest news lands first on X.</p>
+    <a class="mail-btn magnet" href="about.html#contact"><span class="jp">お問い合わせ →</span><span class="en">Get in Touch →</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="jp">© 2025–2026 東京AI映像合同会社 All rights reserved.</span>
+    <span class="en">© 2025–2026 Tokyo AI Visuals LLC. All rights reserved.</span>
+    <span class="jp">想像の未来を、映像でひらく。</span>
+    <span class="en">Exploring the future of generative cinema.</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/main.js"></script>
+</body>
+</html>

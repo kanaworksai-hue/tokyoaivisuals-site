@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="jp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tokyo AI Visuals | 東京AI映像合同会社 — KanaWorks_AI</title>
+<meta name="description" content="東京AI映像合同会社（Tokyo AI Visuals LLC）— AI映像制作・AI広告・AIゲーム宣伝・AIツール検証/PR。代表 KANA（KanaWorks_AI）。">
+<meta property="og:image" content="https://www.tokyoaivisuals.com/assets/page-hero-bg.png">
+<meta property="og:title" content="Tokyo AI Visuals — Dreams in Motion">
+<meta property="og:description" content="AI video studio in Tokyo, led by creator KANA (KanaWorks_AI).">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo500.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Anton&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="fx"></canvas>
+<div id="cursor"></div><div id="ring"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/logo500.png" alt="KanaWorks_AI logo">KanaWorks_AI</a>
+    <nav class="pill" id="navPill">
+      <a href="index.html" class="active"><span class="jp">ホーム</span><span class="en">Home</span></a>
+      <a href="services.html"><span class="jp">業務内容</span><span class="en">Services</span></a>
+      <a href="news.html"><span class="jp">ニュース</span><span class="en">News</span></a>
+      <a href="indie.html">Indie Dev</a>
+      <a href="about.html"><span class="jp">会社情報</span><span class="en">About Us</span></a>
+    </nav>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="menu-btn" onclick="document.getElementById('navPill').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <video autoplay muted loop playsinline poster="assets/hero-poster.jpg" src="assets/hero-bg.mp4" style="object-position:center"></video>
+  <div class="shade"></div>
+  <div class="wrap hero-inner">
+    <p class="kicker">TOKYO AI VISUALS — AI VIDEO STUDIO</p>
+    <h1 id="heroTitle" class="fluid-text">Dreams<span class="l2">in Motion</span></h1>
+    <p class="sub jp">東京AI映像合同会社は、物語×ビジュアル×最先端AIで映像をつくる、クリエイター主導のスタジオです。</p>
+    <p class="sub en">Tokyo AI Visuals is a creator-led studio crafting films where storytelling, striking visuals and cutting-edge AI collide.</p>
+    <p class="titles"><b>KanaWorks_AI</b><span class="jp">　／　代表・AI映像クリエイター KANA</span><span class="en">　/　Led by AI video creator KANA</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary magnet" href="services.html"><span class="jp">業務内容を見る ▶</span><span class="en">Our Services ▶</span></a>
+      <a class="btn btn-ghost magnet" href="https://x.com/KanaWorks_AI" target="_blank" rel="noopener">X — @KanaWorks_AI</a>
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="num"><span class="cnt" data-n="120">0</span><span class="plus">+</span></div><div class="label jp">制作プロジェクト</div><div class="label en">Projects delivered</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="20">0</span><span class="plus">+</span></div><div class="label jp">企業・ブランドとの協業</div><div class="label en">Brand collaborations</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="20">0</span><span class="plus">+</span></div><div class="label jp">国内外の受賞</div><div class="label en">Awards &amp; prizes</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="109">0</span><span class="plus jp">回</span><span class="plus en">×</span></div><div class="label jp">街頭ビジョン放映（世界5都市＋渋谷個人特集）</div><div class="label en">Billboard screenings · 5 cities + Shibuya solo</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="4">0</span><span class="plus jp">回</span><span class="plus en">×</span></div><div class="label jp">コンテストを主催</div><div class="label en">Contests hosted</div></div>
+  </div>
+</div>
+
+<!-- SERVICES DIGEST -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">01 — SERVICES</div>
+      <h2><span class="jp">業務内容</span><span class="en">What We Do</span></h2>
+      <p class="lead jp">AI映像の制作から、広告、ゲーム宣伝、プラットフォームPRまで。4つの業務領域と、自主開発プロジェクトをご紹介します。</p>
+      <p class="lead en">Four service areas — AI film production, ads, game promotion and platform PR — plus our indie projects.</p>
+    </div>
+    <div class="svc-grid five" id="svcDigest">
+      <a class="svc tilt reveal" href="services.html#video">
+        <div class="ico">🎬</div>
+        <h4><span class="jp">AI映像制作</span><span class="en">AI Video</span></h4>
+        <p class="jp">シネマティックなAI映像をオーダーメイドで制作。</p>
+        <p class="en">Bespoke cinematic AI films.</p>
+      </a>
+      <a class="svc tilt reveal d1" href="services.html#ads">
+        <div class="ico">📣</div>
+        <h4><span class="jp">AI広告</span><span class="en">AI Ads</span></h4>
+        <p class="jp">SNSで伸びる広告映像。大手ブランドとの実績多数。</p>
+        <p class="en">Ad films built to perform on social.</p>
+      </a>
+      <a class="svc tilt reveal d2" href="services.html#game">
+        <div class="ico">🕹️</div>
+        <h4><span class="jp">AIゲーム宣伝</span><span class="en">Game Promotion</span></h4>
+        <p class="jp">ゲームPV制作と、遊べるWebゲームの開発。</p>
+        <p class="en">Game trailers plus playable web games.</p>
+      </a>
+      <a class="svc tilt reveal d3" href="services.html#promotion">
+        <div class="ico">🚀</div>
+        <h4><span class="jp">ツールPR</span><span class="en">Tool PR</span></h4>
+        <p class="jp">Xでの発信力を活かしたプラットフォーム公式PR。</p>
+        <p class="en">Official platform PR powered by our reach on X.</p>
+      </a>
+      <a class="svc tilt reveal d3" href="indie.html">
+        <div class="ico">🐰</div>
+        <h4>Indie Dev</h4>
+        <p class="jp">自社ゲーム6タイトルと無料ツールを公開中。</p>
+        <p class="en">Six original games and free tools, live now.</p>
+      </a>
+    </div>
+    <p class="works-note reveal"><a href="services.html"><span class="jp">業務内容の詳細を見る →</span><span class="en">Explore all services →</span></a></p>
+  </div>
+</section>
+
+<!-- CONTESTS & NEWS DIGEST -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">02 — CONTESTS</div>
+      <h2><span class="jp">主催コンテスト</span><span class="en">Contests We Host</span></h2>
+      <p class="lead jp">これまでに4回開催、延べ400名以上が参加、賞金・賞品総額は80万円超。受賞作品は渋谷愛ビジョンで1週間上映されました。</p>
+      <p class="lead en">Four contests, 400+ participants, over ¥800,000 in prizes — winners screened for a week on Shibuya Ai Vision.</p>
+    </div>
+    <div class="explore-grid">
+      <a class="x-card tilt reveal" href="contest-unbound-dreams.html">
+        <div class="x-num">2026.03 — 04 · HOST</div>
+        <h3>Unbound Dreams</h3>
+        <p class="jp">AI Big Screen Video Contest 2026。テーマ「AIが夢を、もっと自由に」。受賞15名、全入賞作品を渋谷愛ビジョンで上映。</p>
+        <p class="en">Theme: "Set dreams free with AI." 15 winners, all screened on Shibuya Ai Vision.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a class="x-card tilt reveal d1" href="contest-run-forward.html">
+        <div class="x-num">2025.12 — 2026.01 · HOST</div>
+        <h3>RUN FORWARD</h3>
+        <p class="jp">AI VIDEO CONTEST 2026。テーマ「走れ」。招待コードで誰でも無料参加、午年の幕開けを盛り上げたオンラインコンテスト。</p>
+        <p class="en">Theme: "Run." Free to enter — the online contest that kicked off the Year of the Horse.</p>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+    <p class="works-note reveal"><a href="news.html"><span class="jp">コンテスト情報をすべて見る →</span><span class="en">All contests →</span></a></p>
+
+    <div class="sec-head reveal" style="margin:80px 0 40px">
+      <div class="num">03 — NEWS</div>
+      <h2 style="font-size:clamp(24px,3.4vw,38px)"><span class="jp">ニュース</span><span class="en">News &amp; Topics</span></h2>
+    </div>
+    <div class="news-list reveal">
+      <div class="news-item"><span class="date">2026.06.03</span><span class="cat"><span class="jp">受賞</span><span class="en">AWARD</span></span><span><span class="jp">Lovart「実務デザインコンテスト」にて優秀賞を受賞しました</span><span class="en">Won the Excellence Award at Lovart's Practical Design Contest</span></span></div>
+      <div class="news-item"><span class="date">2026.03.06</span><span class="cat"><span class="jp">放映</span><span class="en">SCREENING</span></span><span><span class="jp">渋谷愛ビジョンにて個人特集〈AI Video Gallery〉を1週間放映</span><span class="en">One-week solo feature "AI Video Gallery" on Shibuya Ai Vision</span></span></div>
+      <div class="news-item"><span class="date">2025.11.08</span><span class="cat"><span class="jp">出展</span><span class="en">EXHIBIT</span></span><span><span class="jp">「AIフェスティバル2025」（ベルサール秋葉原）にブース出展しました</span><span class="en">Exhibited at AI Festival 2025, Bellesalle Akihabara</span></span></div>
+    </div>
+    <p class="works-note reveal"><a href="news.html"><span class="jp">ニュースをすべて見る →</span><span class="en">All news →</span></a></p>
+  </div>
+</section>
+
+<!-- FEATURED WORKS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">04 — FEATURED</div>
+      <h2><span class="jp">注目の作品</span><span class="en">Featured Works</span></h2>
+      <p class="lead jp">世界5都市の街頭ビジョンで102回放映された作品をはじめ、代表作をピックアップ。</p>
+      <p class="lead en">Highlights — including the film screened on billboards across five cities.</p>
+    </div>
+    <div class="video-grid">
+      <div class="yt tilt reveal" data-id="geT2OJvxidg"><img src="https://i.ytimg.com/vi/geT2OJvxidg/hqdefault.jpg" alt="International Showcase" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="yt tilt reveal d1" data-id="wWHN2hD_yBQ"><img src="https://i.ytimg.com/vi/wWHN2hD_yBQ/hqdefault.jpg" alt="Alibaba Cloud AIGC Championship promo" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+      <div class="yt tilt reveal d2" data-id="-IcCdjc1hw8"><img src="https://i.ytimg.com/vi/-IcCdjc1hw8/hqdefault.jpg" alt="Short film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+    </div>
+    <p class="works-note reveal"><span class="jp">もっと見る： </span><span class="en">More on </span><a href="https://www.youtube.com/@kanaworks_AI" target="_blank" rel="noopener">YouTube — @kanaworks_AI</a></p>
+  </div>
+</section>
+
+<!-- ABOUT DIGEST -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">05 — ABOUT US</div>
+      <h2><span class="jp">会社情報</span><span class="en">About Us</span></h2>
+    </div>
+    <div class="explore-grid">
+      <a class="x-card tilt reveal" href="about.html#company">
+        <div class="x-num">COMPANY</div>
+        <h3><span class="jp">東京AI映像合同会社</span><span class="en">Tokyo AI Visuals LLC</span></h3>
+        <p class="jp">東京・日本橋を拠点とする、クリエイター主導のAI映像スタジオ。AIパイプライン×映画的クラフトで、企画から納品までワンストップ。</p>
+        <p class="en">A creator-led AI video studio in Nihonbashi, Tokyo — AI pipelines × filmmaking craft, one-stop from concept to delivery.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a class="x-card tilt reveal d1" href="about.html#kana">
+        <div class="x-num">FOUNDER</div>
+        <h3>KANA</h3>
+        <p class="jp">代表・AI映像クリエイター。国内外で20以上の受賞、世界5都市での街頭放映、渋谷愛ビジョン個人特集。</p>
+        <p class="en">Founder &amp; AI video creator — 20+ awards, billboards in 5 cities, and a solo Shibuya Ai Vision feature.</p>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COLLABORATIONS -->
+<section class="section" style="padding-bottom:100px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">PARTNERS</div>
+      <h2><span class="jp">主なコラボレーション</span><span class="en">Selected Collaborations</span></h2>
+      <p class="lead jp">私たちの仕事を支え、信頼を寄せてくださっているパートナーの皆さまです。</p>
+      <p class="lead en">The partners who trust us with their work — and define who we are.</p>
+    </div>
+    <div class="partner-wall reveal">
+      <div class="partner-group">
+        <div class="tag">AI Video Platforms</div>
+        <div class="partner-names"><span>KlingAI</span><span>HailuoAI</span><span>WAN</span><span>ViduAI</span></div>
+      </div>
+      <div class="partner-group">
+        <div class="tag">Creative Tools</div>
+        <div class="partner-names"><span>CapCut</span><span>Lovart</span><span>Invideo</span><span>Imagine.art</span><span>DomoAI</span><span>Higgsfield</span></div>
+      </div>
+      <div class="partner-group">
+        <div class="tag">Brands &amp; Tech</div>
+        <div class="partner-names"><span>Alibaba Group</span><span>Zai</span><span>FlovaAI</span><span>OiiOiiai</span><span>Udemy</span><span>Hitem3D</span><span>JoyPix</span><span>AutoCoder</span></div>
+      </div>
+      <div class="partner-group">
+        <div class="tag"><span class="jp">日本企業</span><span class="en">Japanese Companies</span></div>
+        <div class="partner-names"><span>GMO ENGINE株式会社</span><span>StunPiece株式会社</span><span>株式会社 TOKYO EPIC</span><span>UUUM株式会社</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <video class="bgv" autoplay muted loop playsinline src="assets/cta-bg.mp4"></video>
+  <div class="bgshade"></div>
+  <div class="wrap reveal">
+    <h2><span class="jp">一緒に、何かすごいものを。</span><span class="en">Let's Create Something Amazing</span></h2>
+    <p class="jp">プロジェクトのご相談・コラボレーションはお気軽に。</p>
+    <p class="en">Have a project in mind? I'd love to hear about it.</p>
+    <a class="mail-btn magnet" href="about.html#contact"><span class="jp">お問い合わせ →</span><span class="en">Get in Touch →</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="jp">© 2025–2026 東京AI映像合同会社 All rights reserved.</span>
+    <span class="en">© 2025–2026 Tokyo AI Visuals LLC. All rights reserved.</span>
+    <span class="jp">想像の未来を、映像でひらく。</span>
+    <span class="en">Exploring the future of generative cinema.</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/main.js"></script>
+</body>
+</html>

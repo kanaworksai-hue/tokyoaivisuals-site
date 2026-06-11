@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="jp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会社情報 | 東京AI映像合同会社 — Tokyo AI Visuals LLC</title>
+<meta name="description" content="東京AI映像合同会社（Tokyo AI Visuals LLC）の会社概要、代表KANAの紹介、お問い合わせ。">
+<meta property="og:image" content="https://www.tokyoaivisuals.com/assets/page-hero-bg.png">
+<link rel="icon" href="assets/logo500.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Anton&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="fx"></canvas>
+<div id="cursor"></div><div id="ring"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/logo500.png" alt="KanaWorks_AI logo">KanaWorks_AI</a>
+    <nav class="pill" id="navPill">
+      <a href="index.html"><span class="jp">ホーム</span><span class="en">Home</span></a>
+      <a href="services.html"><span class="jp">業務内容</span><span class="en">Services</span></a>
+      <a href="news.html"><span class="jp">ニュース</span><span class="en">News</span></a>
+      <a href="indie.html">Indie Dev</a>
+      <a href="about.html" class="active"><span class="jp">会社情報</span><span class="en">About Us</span></a>
+    </nav>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="menu-btn" onclick="document.getElementById('navPill').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="num">ABOUT US</div>
+    <h1><span class="jp">会社情報</span><span class="en">About Us</span></h1>
+    <p class="lead jp">会社概要、代表KANAの紹介、お問い合わせはこちらから。</p>
+    <p class="lead en">Company profile, founder KANA, and how to reach us.</p>
+  </div>
+  <div class="crumb">Tokyo AI Visuals / About</div>
+</section>
+
+<!-- 1. COMPANY -->
+<section class="section" id="company">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">1 — COMPANY</div>
+      <h2><span class="jp">会社概要</span><span class="en">Company</span></h2>
+    </div>
+    <div class="company-grid">
+      <div class="company-table reveal">
+        <div class="row"><div class="k"><span class="jp">会社名</span><span class="en">NAME</span></div><div class="v"><span class="jp">東京AI映像合同会社</span><span class="en">Tokyo AI Visuals LLC</span></div></div>
+        <div class="row"><div class="k"><span class="jp">代表者</span><span class="en">FOUNDER</span></div><div class="v"><span class="jp">夏目 華奈</span><span class="en">Natsume Kana</span></div></div>
+        <div class="row"><div class="k"><span class="jp">事業内容</span><span class="en">SERVICES</span></div><div class="v">
+          <span class="jp">AI技術を活用した映像・アニメーション制作／AIを活用したゲーム及びインタラクティブコンテンツの企画・開発／SNSを活用した広告・マーケティング・クリエイティブコンサルティング／映像・ゲーム・AI技術に関する研究及び教育<br><small style="color:var(--ink-soft)">※ 法務上の事業目的は登記内容に準拠します。</small></span>
+          <span class="en">AI-powered video &amp; animation / AI game &amp; interactive content / SNS advertising &amp; creative consulting / Research &amp; education in video, games &amp; AI</span>
+        </div></div>
+        <div class="row"><div class="k"><span class="jp">主要取引銀行</span><span class="en">BANKS</span></div><div class="v"><span class="jp">三菱UFJ銀行・みずほ銀行</span><span class="en">MUFG Bank / Mizuho Bank</span></div></div>
+        <div class="row"><div class="k"><span class="jp">所在地</span><span class="en">ADDRESS</span></div><div class="v"><span class="jp">〒103-0022 東京都中央区日本橋室町1丁目11番12号 日本橋水野ビル7階</span><span class="en">7F Nihonbashi Mizuno Bldg., 1-11-12 Nihonbashi-Muromachi, Chuo-ku, Tokyo 103-0022, Japan</span></div></div>
+      </div>
+      <div class="company-msg reveal d1">
+        <h3><span class="jp">代表者メッセージ</span><span class="en">Message from the Founder</span></h3>
+        <p class="jp">AIは映像制作の在り方を大きく変えています。しかし、決して変わらないものがあります。それは——物語を届けたいという、人間の根源的な願いです。</p>
+        <p class="jp">Tokyo AI Visualsは、最先端のAIパイプラインと映画制作のクラフトマンシップを掛け合わせ、より自由で、より創造性に満ちた制作環境の構築を目指しています。</p>
+        <p class="jp">クリエイションの新しい時代は、すでに動き始めています。その未来を、ともに形にしていきましょう。</p>
+        <p class="en">AI is profoundly changing how films are made. Yet one thing never changes — the fundamentally human desire to tell stories.</p>
+        <p class="en">Tokyo AI Visuals combines state-of-the-art AI pipelines with the craftsmanship of filmmaking, building a freer and more creative production environment.</p>
+        <p class="en">A new era of creation has already begun. Let's shape that future together.</p>
+        <p class="sign"><span class="jp">代表　</span><span class="en">Founder　</span><b>夏目 華奈<span class="en"> / Natsume Kana</span></b></p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:80px">
+    <div class="sec-head reveal" style="margin-bottom:40px">
+      <div class="num">PARTNERS</div>
+      <h2 style="font-size:clamp(24px,3.4vw,38px)"><span class="jp">主な取引先・協業実績</span><span class="en">Clients &amp; Partners</span></h2>
+    </div>
+    <div class="partner-wall reveal">
+      <div class="partner-group">
+        <div class="tag">AI Video Platforms</div>
+        <div class="partner-names"><span>KlingAI</span><span>HailuoAI</span><span>WAN</span><span>ViduAI</span></div>
+      </div>
+      <div class="partner-group">
+        <div class="tag">Creative Tools</div>
+        <div class="partner-names"><span>CapCut</span><span>Lovart</span><span>Invideo</span><span>Imagine.art</span><span>DomoAI</span><span>Higgsfield</span></div>
+      </div>
+      <div class="partner-group">
+        <div class="tag">Brands &amp; Tech</div>
+        <div class="partner-names"><span>Alibaba Group</span><span>Zai</span><span>FlovaAI</span><span>OiiOiiai</span><span>Udemy</span><span>Hitem3D</span><span>JoyPix</span><span>AutoCoder</span></div>
+      </div>
+      <div class="partner-group">
+        <div class="tag"><span class="jp">日本企業</span><span class="en">Japanese Companies</span></div>
+        <div class="partner-names"><span>GMO ENGINE株式会社</span><span>StunPiece株式会社</span><span>株式会社 TOKYO EPIC</span><span>UUUM株式会社</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. KANA -->
+<section class="section alt" id="kana">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">2 — FOUNDER</div>
+      <h2>KANA</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="jp">はじめまして。<b>KANA（夏目 華奈）</b>です。東京を拠点に活動するAI映像クリエイターで、<b>東京AI映像合同会社</b>の代表を務めています。</p>
+        <p class="jp">ストーリーテリング、印象的なビジュアル、そして最先端のテクノロジーを掛け合わせた、<span class="hl">シネマティックなAI映像</span>の制作を得意としています。コンセプト設計から絵コンテ、生成、ポストプロダクションまで、すべての工程に自ら携わっています。</p>
+        <p class="jp"><b>KanaWorks_AI</b>として世界のAIプラットフォームやブランドとコラボレーションし、これまでに<span class="hl">20以上の賞</span>をいただきました。AIは創り手に取って代わるものではなく、<span class="hl">創造性を拡張する力</span>だと信じています。</p>
+        <p class="en">Hi, I'm <b>KANA (Natsume Kana)</b> — an AI video creator based in Tokyo and the founder of <b>Tokyo AI Visuals LLC</b>.</p>
+        <p class="en">I specialize in <span class="hl">cinematic AI-generated video</span> fusing storytelling, striking visuals and cutting-edge technology — hands-on through every stage from concept to post.</p>
+        <p class="en">Through <b>KanaWorks_AI</b> I've collaborated with global AI platforms and brands, earning <span class="hl">20+ awards</span> along the way. I believe AI is not a replacement for creators — it's <span class="hl">a powerful extension of creative expression</span>.</p>
+        <div class="tools">
+          <span class="chip">ChatGPT</span><span class="chip">ComfyUI</span><span class="chip">Runway</span><span class="chip">Luma</span><span class="chip">Kling</span><span class="chip">Higgsfield</span><span class="chip">Veo</span><span class="chip">Hailuo</span><span class="chip">Sora</span><span class="chip">Seedance</span>
+        </div>
+        <a class="x-card tilt" href="honors.html" style="margin-top:30px">
+          <div class="x-num">MILESTONES</div>
+          <h3><span class="jp">これまでのあゆみ</span><span class="en">Milestones</span></h3>
+          <p class="jp">国内外での受賞や、世界のスクリーンに作品が届くまでの歩みをまとめています。</p>
+          <p class="en">A quiet record of the awards and the screens our work has reached.</p>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+      <aside class="profile-card reveal d1 tilt">
+        <div class="ph"><img src="assets/logo500.png" alt="KanaWorks_AI mascot"></div>
+        <dl>
+          <dt>NAME</dt><dd>KANA｜夏目 華奈</dd>
+          <dt>ROLE</dt><dd><span class="jp">AI映像クリエイター／東京AI映像合同会社 代表</span><span class="en">AI Video Creator / Founder, Tokyo AI Visuals LLC</span></dd>
+          <dt>BASE</dt><dd><span class="jp">東京・日本橋</span><span class="en">Nihonbashi, Tokyo</span></dd>
+          <dt>X</dt><dd><a href="https://x.com/KanaWorks_AI" target="_blank" rel="noopener" style="color:var(--yellow)">@KanaWorks_AI</a></dd>
+          <dt>YOUTUBE</dt><dd><a href="https://www.youtube.com/@kanaworks_AI" target="_blank" rel="noopener" style="color:var(--yellow)">@kanaworks_AI</a></dd>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <div class="num">3 — CONTACT</div>
+      <h2><span class="jp">お問い合わせ</span><span class="en">Contact Us</span></h2>
+      <p class="lead jp" style="margin-left:auto;margin-right:auto">制作のご依頼、コラボレーション、コンテスト協賛など、お気軽にご連絡ください。送信ボタンを押すと、入力内容が記載されたメールが作成されます。</p>
+      <p class="lead en" style="margin-left:auto;margin-right:auto">Production requests, collaborations, sponsorships — all welcome. Submitting opens an email with your message ready to send.</p>
+    </div>
+    <div class="form-wrap reveal">
+      <form onsubmit="return sendForm(event)">
+        <div class="form-grid">
+          <div class="field">
+            <label><span class="jp">お名前 *</span><span class="en">Name *</span></label>
+            <input name="name" required placeholder="山田 太郎">
+          </div>
+          <div class="field">
+            <label><span class="jp">会社名</span><span class="en">Company</span></label>
+            <input name="company" placeholder="株式会社◯◯">
+          </div>
+          <div class="field">
+            <label><span class="jp">メールアドレス *</span><span class="en">Email *</span></label>
+            <input name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label><span class="jp">ご相談内容 *</span><span class="en">Topic *</span></label>
+            <select name="type" required>
+              <option>AI映像制作 / AI Video</option>
+              <option>AI広告 / AI Ads</option>
+              <option>AIゲーム宣伝 / Game Promotion</option>
+              <option>ツール検証・PR / Tool Testing &amp; PR</option>
+              <option>コンテスト協賛 / Contest Sponsorship</option>
+              <option>その他 / Other</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label><span class="jp">メッセージ *</span><span class="en">Message *</span></label>
+            <textarea name="message" required placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="mail-btn magnet" type="submit" style="border:0;cursor:pointer"><span class="jp">送信する ✉</span><span class="en">Send ✉</span></button>
+          <p class="form-note">
+            <span class="jp">直接メールも歓迎です： kanaworksai@gmail.com ／ 企業向け窓口： kana@tokyoaivisuals.com　</span>
+            <span class="en">Or email directly: kanaworksai@gmail.com / business: kana@tokyoaivisuals.com　</span>
+            <button type="button" class="copy-mail" data-ok="✓ Copied" onclick="copyMail(this)"><span class="jp">アドレスをコピー</span><span class="en">Copy address</span></button>
+          </p>
+          <p class="form-note jp">内容によってはお答えできない場合がございます。ご了承くださいませ。</p>
+        </div>
+      </form>
+      <div class="socials">
+        <a class="magnet" href="https://x.com/KanaWorks_AI" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="magnet" href="https://www.youtube.com/@kanaworks_AI" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.5 15.5v-7l6.5 3.5z"/></svg></a>
+        <a class="magnet" href="https://www.instagram.com/kanaworksai/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.3-1.8-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.4a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8zm0 2a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8zm5.6-3.5a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="jp">© 2025–2026 東京AI映像合同会社 All rights reserved.</span>
+    <span class="en">© 2025–2026 Tokyo AI Visuals LLC. All rights reserved.</span>
+    <span class="jp">想像の未来を、映像でひらく。</span>
+    <span class="en">Exploring the future of generative cinema.</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/main.js"></script>
+</body>
+</html>

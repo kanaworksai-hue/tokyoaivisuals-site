@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="jp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>業務内容 | Tokyo AI Visuals — 東京AI映像合同会社</title>
+<meta name="description" content="AI映像制作・AI広告・AIゲーム宣伝・AIツール検証・AIツールPR。Tokyo AI Visualsの5つの業務領域。">
+<meta property="og:image" content="https://www.tokyoaivisuals.com/assets/page-hero-bg.png">
+<link rel="icon" href="assets/logo500.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Anton&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="fx"></canvas>
+<div id="cursor"></div><div id="ring"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/logo500.png" alt="KanaWorks_AI logo">KanaWorks_AI</a>
+    <nav class="pill" id="navPill">
+      <a href="index.html"><span class="jp">ホーム</span><span class="en">Home</span></a>
+      <a href="services.html" class="active"><span class="jp">業務内容</span><span class="en">Services</span></a>
+      <a href="news.html"><span class="jp">ニュース</span><span class="en">News</span></a>
+      <a href="indie.html">Indie Dev</a>
+      <a href="about.html"><span class="jp">会社情報</span><span class="en">About Us</span></a>
+    </nav>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="menu-btn" onclick="document.getElementById('navPill').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="num">SERVICES</div>
+    <h1><span class="jp">業務内容</span><span class="en">Our Services</span></h1>
+    <p class="lead jp">AI映像の制作から、広告、ゲーム宣伝、ツール検証・PRまで。実例とともにご紹介します。</p>
+    <p class="lead en">From AI film production to ads, game promotion, tool testing and PR — with real examples.</p>
+  </div>
+  <div class="crumb">Tokyo AI Visuals / Services</div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+
+    <!-- 01 AI VIDEO -->
+    <div class="svc-block first" id="video">
+      <div class="txt reveal">
+        <div class="tagno">SERVICE 01</div>
+        <h3><span class="jp">AI映像制作</span><span class="en">AI Video Production</span></h3>
+        <p class="jp">シネマティックなショートフィルムからSNS向けショート動画まで、AI映像をオーダーメイドで制作します。コンセプト設計・絵コンテ・生成・ポストプロダクションを一気通貫で行うため、高品質かつ圧倒的なスピードで納品できます。</p>
+        <p class="en">Bespoke AI video — from cinematic short films to social-first clips. Concept, storyboard, generation and post-production handled end-to-end, delivering high quality at remarkable speed.</p>
+        <ul class="points">
+          <li><span class="jp">企画から納品までワンストップ</span><span class="en">One-stop, concept to delivery</span></li>
+          <li><span class="jp">Kling・Veo・Sora など最新モデルを適材適所で活用</span><span class="en">Right model for the job — Kling, Veo, Sora and more</span></li>
+          <li><span class="jp">世界5都市の街頭ビジョンで放映された実績</span><span class="en">Proven on billboards in 5 cities worldwide</span></li>
+        </ul>
+      </div>
+      <div class="video-grid duo reveal d1" style="grid-template-columns:1fr 1fr">
+        <div class="yt tilt" data-id="geT2OJvxidg"><img src="https://i.ytimg.com/vi/geT2OJvxidg/hqdefault.jpg" alt="Showcase" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="-IcCdjc1hw8"><img src="https://i.ytimg.com/vi/-IcCdjc1hw8/hqdefault.jpg" alt="Short film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="G-hhg2MrNyY"><img src="https://i.ytimg.com/vi/G-hhg2MrNyY/hqdefault.jpg" alt="Short film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="pI9Nq_gPDHQ"><img src="https://i.ytimg.com/vi/pI9Nq_gPDHQ/hqdefault.jpg" alt="Short film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+      </div>
+    </div>
+
+    <!-- 02 AI ADS -->
+    <div class="svc-block flip" id="ads">
+      <div class="txt reveal">
+        <div class="tagno">SERVICE 02</div>
+        <h3><span class="jp">AI広告</span><span class="en">AI Advertising</span></h3>
+        <p class="jp">「伸びる」ことを設計したAI広告映像。Alibaba Cloudの国際大会プロモーションや、Flova AI・Higgsfieldのキャンペーン映像など、グローバルブランドとの制作実績があります。コンセプト広告の企画提案も可能です。</p>
+        <p class="en">Ad films engineered to perform — including promos for the Alibaba Cloud AIGC Championship (Milano Cortina 2026), Flova AI × Seedance 2.0, and Higgsfield campaigns. Concept-ad planning available too.</p>
+        <ul class="points">
+          <li><span class="jp">SNS最適化（フック設計・尺・フォーマット）</span><span class="en">Optimized for social — hooks, length, format</span></li>
+          <li><span class="jp">渋谷愛ビジョンで放映されたCM制作実績</span><span class="en">CM aired on the Shibuya Ai Vision billboard</span></li>
+          <li><span class="jp">製品PV・ブランドムービー・コンセプトCM</span><span class="en">Product PVs, brand movies, concept CMs</span></li>
+        </ul>
+        <div class="clients">
+          <span class="chip">Alibaba Cloud</span><span class="chip">Flova AI</span><span class="chip">Higgsfield</span><span class="chip">渋谷愛ビジョン</span>
+        </div>
+      </div>
+      <div class="ads-grid reveal d1">
+        <div class="yt tilt" data-id="wWHN2hD_yBQ"><img src="https://i.ytimg.com/vi/wWHN2hD_yBQ/hqdefault.jpg" alt="Alibaba Cloud AIGC Championship" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="4277jLNi9Po"><img src="https://i.ytimg.com/vi/4277jLNi9Po/hqdefault.jpg" alt="Ad film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt vert tilt" data-id="z5WcAJ7IBAc"><img src="https://i.ytimg.com/vi/z5WcAJ7IBAc/oardefault.jpg" onerror="this.src='https://i.ytimg.com/vi/z5WcAJ7IBAc/hqdefault.jpg'" alt="渋谷愛ビジョンCM (Short)" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="_EkpGVzzMMg"><img src="https://i.ytimg.com/vi/_EkpGVzzMMg/hqdefault.jpg" alt="Seedance 2.0 for Flova AI" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="nz0a1rdHyZQ"><img src="https://i.ytimg.com/vi/nz0a1rdHyZQ/hqdefault.jpg" alt="Seedance 2.0 promo for Flova AI" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+      </div>
+    </div>
+
+    <!-- 03 GAME PROMO -->
+    <div class="svc-block" id="game">
+      <div class="txt reveal">
+        <div class="tagno">SERVICE 03</div>
+        <h3><span class="jp">AIゲーム宣伝</span><span class="en">AI Game Promotion</span></h3>
+        <p class="jp">ゲームの世界観を最大限に引き出すPV・トレーラーをAIで制作します。シネマティックな本編PVから、SNSで拡散するショート動画まで、プラットフォームに合わせた最適なフォーマットで展開。『羊の守護者』PV広告などの制作実績があります。</p>
+        <p class="en">AI-crafted game PVs and trailers that bring a game's world to life — from cinematic main trailers to share-ready Shorts, formatted for each platform. Credits include the PV ad for "Guardian of the Sheep."</p>
+        <ul class="points">
+          <li><span class="jp">ゲームPV・トレーラー制作</span><span class="en">Game PVs &amp; trailers</span></li>
+          <li><span class="jp">縦型ショート動画でのSNS展開</span><span class="en">Vertical Shorts for social reach</span></li>
+          <li><span class="jp">ゲーム×SNSの参加型キャンペーン設計</span><span class="en">Play-to-win SNS campaign design</span></li>
+        </ul>
+      </div>
+      <div class="reveal d1">
+        <div class="vid2">
+          <div class="yt tilt" data-id="RjPWFcg49a4"><img src="https://i.ytimg.com/vi/RjPWFcg49a4/hqdefault.jpg" alt="Game promotion film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="yt tilt" data-id="q4iWdeCTqrg"><img src="https://i.ytimg.com/vi/q4iWdeCTqrg/hqdefault.jpg" alt="『羊の守護者』PV広告" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </div>
+        <div class="vid3">
+          <div class="yt vert tilt" data-id="RsSwa2FMAvw"><img src="https://i.ytimg.com/vi/RsSwa2FMAvw/oardefault.jpg" onerror="this.src='https://i.ytimg.com/vi/RsSwa2FMAvw/hqdefault.jpg'" alt="Game short" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="yt vert tilt" data-id="mxCdYIDLSzA"><img src="https://i.ytimg.com/vi/mxCdYIDLSzA/oardefault.jpg" onerror="this.src='https://i.ytimg.com/vi/mxCdYIDLSzA/hqdefault.jpg'" alt="Game short" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="yt vert tilt" data-id="s6cyrjkSDus"><img src="https://i.ytimg.com/vi/s6cyrjkSDus/oardefault.jpg" onerror="this.src='https://i.ytimg.com/vi/s6cyrjkSDus/hqdefault.jpg'" alt="Game short" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 TOOL PR -->
+    <div class="svc-block flip" id="promotion">
+      <div class="txt reveal">
+        <div class="tagno">SERVICE 04</div>
+        <h3><span class="jp">AIプラットフォーム・ツールPR</span><span class="en">AI Platform &amp; Tool Promotion</span></h3>
+        <p class="jp">X（@KanaWorks_AI）での発信力を活かし、AIプラットフォームやツールの公式PRを行います。Kling・Hailuo・Vidu・Lovart・CapCutなど20社以上とのタイアップ実績。レビュー投稿、キャンペーン企画、デモ映像制作まで一括対応します。</p>
+        <p class="en">Official PR for AI platforms and tools, powered by our reach on X (@KanaWorks_AI) — 20+ tie-ups with Kling, Hailuo, Vidu, Lovart, CapCut and more. Review posts, campaign planning and demo films, all in one.</p>
+        <ul class="points">
+          <li><span class="jp">公式タイアップ投稿（Paid Partnership対応）</span><span class="en">Official tie-up posts (paid-partnership compliant)</span></li>
+          <li><span class="jp">日本語圏コミュニティへのローカライズ発信</span><span class="en">Localized reach into the Japanese creator community</span></li>
+          <li><span class="jp">デモ作品・ベンチマーク映像の制作</span><span class="en">Demo works &amp; benchmark films</span></li>
+        </ul>
+      </div>
+      <div class="reveal d1">
+        <a class="x-panel tilt" href="https://x.com/KanaWorks_AI" target="_blank" rel="noopener" style="display:block">
+          <svg class="xmark" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <div class="handle">@<span>KanaWorks_AI</span></div>
+          <div class="xname">KANA｜東京AI映像</div>
+          <div class="xtags">
+            <span class="chip"><span class="jp">受賞報告・作品公開</span><span class="en">Awards &amp; new works</span></span>
+            <span class="chip"><span class="jp">公式タイアップ</span><span class="en">Official tie-ups</span></span>
+            <span class="chip"><span class="jp">ツール検証速報</span><span class="en">Tool-test flash reports</span></span>
+            <span class="chip"><span class="jp">コンテスト開催</span><span class="en">Contest hosting</span></span>
+          </div>
+          <span class="follow"><span class="jp">Xでフォローする →</span><span class="en">Follow on X →</span></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONFIDENTIAL WORKS -->
+<section class="section alt" id="confidential">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">UNDISCLOSED WORKS</div>
+      <h2><span class="jp">表に出ない仕事たち</span><span class="en">The Work We Can't Show</span></h2>
+      <p class="lead jp">私たちの仕事のいくつかは、ここでお見せすることができません。守秘義務のもとでお預かりした、大切なプロジェクトだからです。その一端を、輪郭だけご紹介します。</p>
+      <p class="lead en">Some of our finest work never appears here — entrusted to us under strict confidentiality. What follows is only the silhouette.</p>
+    </div>
+    <div class="contest-grid">
+      <div class="c-card tilt reveal">
+        <span class="badge ghost">CONFIDENTIAL</span>
+        <h4><span class="jp">空間演出・プロジェクションマッピング</span><span class="en">Spatial &amp; Projection Art</span></h4>
+        <p class="jp">歴史あるワイナリーの壁面から、都市の大型建築のファサードまで。建築物そのものをスクリーンに変え、空間に物語を宿す投影映像を手がけています。</p>
+        <p class="en">From the walls of a historic winery to the facades of large urban architecture — projection films that turn buildings themselves into screens.</p>
+      </div>
+      <div class="c-card tilt reveal d1">
+        <span class="badge ghost">CONFIDENTIAL</span>
+        <h4><span class="jp">ミュージックビデオ</span><span class="en">Music Videos</span></h4>
+        <p class="jp">アーティストの世界観を深く支える、ミュージックビデオの背景映像を制作。音楽と映像が溶け合う瞬間をつくっています。</p>
+        <p class="en">Background visuals for music videos — crafted to dissolve seamlessly into the artist's world.</p>
+      </div>
+      <div class="c-card tilt reveal">
+        <span class="badge ghost">CONFIDENTIAL</span>
+        <h4><span class="jp">ナショナルブランドCM</span><span class="en">Brand Commercials</span></h4>
+        <p class="jp">誰もが知る食品ブランドのコマーシャル映像など、マスに届く広告クリエイティブの制作実績があります。</p>
+        <p class="en">Commercial films for household-name food brands — creative built to reach the mass audience.</p>
+      </div>
+      <div class="c-card tilt reveal d1">
+        <span class="badge ghost">CONFIDENTIAL</span>
+        <h4><span class="jp">ビジネスプレゼンテーション映像</span><span class="en">High-stakes Presentations</span></h4>
+        <p class="jp">資源分野の大型入札・提案の場で使用される展示映像を制作。一度きりの勝負の瞬間を、映像の力で支えています。</p>
+        <p class="en">Presentation films for major bids in the resources sector — supporting the moments where everything is decided once.</p>
+      </div>
+    </div>
+    <p class="works-note reveal"><span class="jp">※ いずれも守秘義務契約により、クライアント名および映像は非公開です。ご相談の際には、近い事例の制作プロセスをご説明できます。</span><span class="en">* Client names and footage remain confidential under NDA. In consultations, we can walk you through the process behind comparable projects.</span></p>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <video class="bgv" autoplay muted loop playsinline src="assets/cta-bg.mp4"></video>
+  <div class="bgshade"></div>
+  <div class="wrap reveal">
+    <h2><span class="jp">どの業務も、まずは気軽にご相談を。</span><span class="en">Start with a Simple Hello</span></h2>
+    <p class="jp">ヒアリングからお見積りまで無料です。</p>
+    <p class="en">Hearing and quotes are free.</p>
+    <a class="mail-btn magnet" href="about.html#contact"><span class="jp">お問い合わせ →</span><span class="en">Get in Touch →</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="jp">© 2025–2026 東京AI映像合同会社 All rights reserved.</span>
+    <span class="en">© 2025–2026 Tokyo AI Visuals LLC. All rights reserved.</span>
+    <span class="jp">想像の未来を、映像でひらく。</span>
+    <span class="en">Exploring the future of generative cinema.</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/main.js"></script>
+</body>
+</html>

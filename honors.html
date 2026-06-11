@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="jp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>これまでのあゆみ | 受賞・上映実績 — Tokyo AI Visuals</title>
+<meta name="description" content="KANAの受賞歴22件と、世界5都市での街頭放映・渋谷愛ビジョン個人特集の記録。">
+<meta property="og:image" content="https://www.tokyoaivisuals.com/assets/page-hero-bg.png">
+<link rel="icon" href="assets/logo500.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Anton&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="fx"></canvas>
+<div id="cursor"></div><div id="ring"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/logo500.png" alt="KanaWorks_AI logo">KanaWorks_AI</a>
+    <nav class="pill" id="navPill">
+      <a href="index.html"><span class="jp">ホーム</span><span class="en">Home</span></a>
+      <a href="services.html"><span class="jp">業務内容</span><span class="en">Services</span></a>
+      <a href="news.html"><span class="jp">ニュース</span><span class="en">News</span></a>
+      <a href="indie.html">Indie Dev</a>
+      <a href="about.html" class="active"><span class="jp">会社情報</span><span class="en">About Us</span></a>
+    </nav>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="menu-btn" onclick="document.getElementById('navPill').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="num">MILESTONES</div>
+    <h1><span class="jp">これまでのあゆみ</span><span class="en">Milestones</span></h1>
+    <p class="lead jp">皆さまに支えられ、作品が少しずつ世界のスクリーンへ届くようになりました。その歩みの記録です。</p>
+    <p class="lead en">Thanks to the people around us, our work has gradually found its way to screens around the world. This is the record of that journey.</p>
+  </div>
+  <div class="crumb">About / Milestones</div>
+</section>
+
+<div class="stats four">
+  <div class="wrap">
+    <div class="stat"><div class="num"><span class="cnt" data-n="22">0</span></div><div class="label jp">受賞</div><div class="label en">Awards</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="109">0</span><span class="plus jp">回</span><span class="plus en">×</span></div><div class="label jp">街頭ビジョン放映（5都市102回＋渋谷7日間）</div><div class="label en">Billboard broadcasts (102 × 5 cities + 7 days Shibuya)</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="5">0</span><span class="plus jp">都市</span><span class="plus en">cities</span></div><div class="label jp">東京・パリ・香港・上海・トロント</div><div class="label en">Tokyo · Paris · HK · Shanghai · Toronto</div></div>
+    <div class="stat"><div class="num"><span class="cnt" data-n="1">0</span><span class="plus jp">週間</span><span class="plus en">week</span></div><div class="label jp">渋谷愛ビジョン個人特集</div><div class="label en">Solo Shibuya Ai Vision feature</div></div>
+  </div>
+</div>
+
+<!-- SCREENINGS -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">ON SCREEN</div>
+      <h2><span class="jp">世界のスクリーンへ</span><span class="en">On the Screens of the World</span></h2>
+    </div>
+    <div class="showcase">
+      <div class="txt reveal">
+        <h3><span class="jp">渋谷から、パリへ。<br>11スクリーン・102回の放映。</span><span class="en">From Shibuya to Paris —<br>11 screens, 102 broadcasts.</span></h3>
+        <p class="jp">2025年6月、AIショートフィルムが世界5都市の大型街頭ビジョンで計<span class="hl-y">102回</span>放映されました。そのひとつが、あの<span class="hl-p">渋谷スクランブル交差点</span>。Kling AI主催のグローバルショーケースに、世界のクリエイターとともに選出されました。</p>
+        <p class="en">In June 2025, my AI short film was broadcast <span class="hl-y">102 times</span> on outdoor screens across 5 cities — including the iconic <span class="hl-p">Shibuya Crossing</span> — selected for Kling AI's global showcase alongside creators worldwide.</p>
+        <div class="city-tags"><span>TOKYO</span><span>PARIS</span><span>HONG KONG</span><span>SHANGHAI</span><span>TORONTO</span></div>
+      </div>
+      <div class="video-grid duo reveal d1">
+        <div class="yt tilt" data-id="geT2OJvxidg"><img src="https://i.ytimg.com/vi/geT2OJvxidg/hqdefault.jpg" alt="International Showcase" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="yt tilt" data-id="a1ouoXBFQWI"><img src="https://i.ytimg.com/vi/a1ouoXBFQWI/hqdefault.jpg" alt="Showcase film" loading="lazy"><div class="glare"></div><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+      </div>
+    </div>
+    <div class="exhibit-grid">
+      <div class="c-card tilt reveal">
+        <span class="badge ghost"><span class="jp">個人特集放映</span><span class="en">SOLO SCREENING</span></span>
+        <div class="date">2026.03.06 — 03.12</div>
+        <h4>KANAWORKS_AI ～<span class="hl">渋谷愛ビジョン</span>～ AI Video Gallery</h4>
+        <p class="jp">渋谷の大型ビジョンで個人作品特集を1週間放映。毎晩20:08より1分間、テーマは「AI × 想像力 × 楽しさ」。</p>
+        <p class="en">A one-week solo feature on the Shibuya Ai Vision billboard, aired nightly at 20:08. Theme: AI × Imagination × Fun.</p>
+      </div>
+      <div class="c-card tilt reveal d1">
+        <span class="badge ghost"><span class="jp">イベント出展</span><span class="en">EXHIBITION</span></span>
+        <div class="date">2025.11.08</div>
+        <h4><span class="jp">「AIフェスティバル2025」出展</span><span class="en">AI Festival 2025 — Exhibitor</span></h4>
+        <p class="jp">ベルサール秋葉原・ブース29に出展。AI映像制作の最前線を直接お届けしました。</p>
+        <p class="en">Booth #29 at Bellesalle Akihabara — sharing the front line of AI filmmaking in person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">AWARDS</div>
+      <h2><span class="jp">受賞歴</span><span class="en">Awards</span></h2>
+      <p class="lead jp">おかげさまで、2025年以降、国内外のコンテストで22の賞をいただくことができました。</p>
+      <p class="lead en">We've been fortunate to receive 22 awards in competitions at home and abroad since 2025.</p>
+    </div>
+    <div class="awards-list reveal">
+      <div class="award"><span class="date">2026.06.03</span><span class="name"><b>Lovart</b><span class="jp"> — 実務デザインコンテスト</span><span class="en"> — Practical Design Contest</span></span><span class="prize"><span class="jp">優秀賞</span><span class="en">Excellence Award</span></span></div>
+      <div class="award"><span class="date">2026.05.14</span><span class="name"><b>CapCut</b><span class="jp"> — CapCut AI座談会</span><span class="en"> — CapCut AI Roundtable</span></span><span class="prize"><span class="jp">ベストクリエイティブ賞</span><span class="en">Best Creative Award</span></span></div>
+      <div class="award"><span class="date">2026.04.28</span><span class="name"><b>Hailuo AI</b> — Relighting Challenge</span><span class="prize">2nd Prize</span></div>
+      <div class="award"><span class="date">2026.02.14</span><span class="name"><b>Kling</b> — My 2026 Life Photo</span><span class="prize">3rd Prize</span></div>
+      <div class="award"><span class="date">2025.12.17</span><span class="name"><b>Kling</b> — Kreate Contest: When Darkness Speaks</span><span class="prize">3rd Prize</span></div>
+      <div class="award"><span class="date">2025.12.05</span><span class="name"><b>スペースインターナショナル × AI PET AWARD</b><span class="jp"> — AI豚祭り</span><span class="en"> — AI Pig Festival</span></span><span class="prize"><span class="jp">銀賞</span><span class="en">Silver Award</span></span></div>
+      <div class="award"><span class="date">2025.11.12</span><span class="name"><b>Vidu</b> — ViduQ2 OnStage: Winners Announcement</span><span class="prize">Vidu's Pick</span></div>
+      <div class="award"><span class="date">2025.11.10</span><span class="name"><b>Lovart</b> — Halloween Challenge</span><span class="prize">Halloween Spirit Award</span></div>
+      <div class="award"><span class="date">2025.09.11</span><span class="name"><b>Kling</b><span class="jp"> — 日本初の創作イベント</span><span class="en"> — First creator event in Japan</span></span><span class="prize"><span class="jp">ベストクリエイター賞</span><span class="en">Best Creator Award</span></span></div>
+      <div class="award"><span class="date">2025.09.02</span><span class="name"><b>Lovart</b> — Self Universe Challenge</span><span class="prize">Visionary Pioneer · 1st</span></div>
+      <div class="award"><span class="date">2025.08.23</span><span class="name"><b>Vidu</b> — Vidu 1st BDay</span><span class="prize">Vidudu's Choice</span></div>
+      <div class="award"><span class="date">2025.08.22</span><span class="name"><b>Hailuo AI × Topaz Labs</b> — Xtreme Competition</span><span class="prize">2nd Prize</span></div>
+      <div class="award"><span class="date">2025.08.18</span><span class="name"><b>ImagineArt</b> — The Real or AI Challenge</span><span class="prize">Winner</span></div>
+      <div class="award"><span class="date">2025.07.25</span><span class="name"><b>Vidu</b> — Vidu Game Show</span><span class="prize"><span class="jp">人気賞</span><span class="en">Popularity Award</span></span></div>
+      <div class="award"><span class="date">2025.07.22</span><span class="name"><b>Lovart</b> — Emoji Challenge</span><span class="prize">Winner</span></div>
+      <div class="award"><span class="date">2025.07.08</span><span class="name"><b>Lovart</b> — Talking Challenge</span><span class="prize">Winner</span></div>
+      <div class="award"><span class="date">2025.07.01</span><span class="name"><b>Mureka</b> — Best AI Video Award</span><span class="prize">Winner</span></div>
+      <div class="award"><span class="date">2025.06.09</span><span class="name"><b>Vidnoz</b> — Children's Day Challenge</span><span class="prize">Winner</span></div>
+      <div class="award"><span class="date">2025.06.06</span><span class="name"><b>SkyReels</b> — Best AI Works of the Month</span><span class="prize">2nd Prize</span></div>
+      <div class="award"><span class="date">2025.05.26</span><span class="name"><b>Kling</b> — Kling AI 2.0 Creative Challenge</span><span class="prize">2nd Prize</span></div>
+      <div class="award"><span class="date">2025.05.16</span><span class="name"><b>Vidnoz</b> — Easter Magic Challenge</span><span class="prize">1st Prize</span></div>
+      <div class="award"><span class="date">2025.05.09</span><span class="name"><b>Kling</b> — Bring Your Vision To Screen</span><span class="prize">Winner</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <video class="bgv" autoplay muted loop playsinline src="assets/cta-bg.mp4"></video>
+  <div class="bgshade"></div>
+  <div class="wrap reveal">
+    <h2><span class="jp">次の物語を、ご一緒に。</span><span class="en">Let's Write the Next Chapter</span></h2>
+    <p class="jp">制作のご依頼・コラボレーションはお気軽に。</p>
+    <p class="en">Production requests and collaborations welcome.</p>
+    <a class="mail-btn magnet" href="about.html#contact"><span class="jp">お問い合わせ →</span><span class="en">Get in Touch →</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="jp">© 2025–2026 東京AI映像合同会社 All rights reserved.</span>
+    <span class="en">© 2025–2026 Tokyo AI Visuals LLC. All rights reserved.</span>
+    <span class="jp">想像の未来を、映像でひらく。</span>
+    <span class="en">Exploring the future of generative cinema.</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="assets/main.js"></script>
+</body>
+</html>
